@@ -218,8 +218,8 @@
         "id": "794f0233-f43a-4875-835a-054422d1748f",
         "sequence_title": "bel aménagement. on aime",
         "image_url": "https://panoramax.openstreetmap.fr/derivates/79/4f/02/33/f43a-4875-835a-054422d1748f/sd.jpg",
-        "color": null,
-        "category": null
+        "color": "green",
+        "category": "infrastructure"
       }
     },
     {
@@ -252,8 +252,8 @@
         "id": "f928e996-e7a8-45e7-aab1-4acde4d4a194",
         "sequence_title": "fin de piste abrupte",
         "image_url": "https://panoramax.openstreetmap.fr/derivates/f9/28/e9/96/e7a8-45e7-aab1-4acde4d4a194/sd.jpg",
-        "color": null,
-        "category": null
+        "color": "orange",
+        "category": "infrastructure"
       }
     },
     {
@@ -269,7 +269,7 @@
         "id": "ec2b3b3c-f59a-4e1b-8132-fc90d7dbc1fa",
         "sequence_title": "ou est la piste sur ce rond point?",
         "image_url": "https://panoramax.openstreetmap.fr/derivates/ec/2b/3b/3c/f59a-4e1b-8132-fc90d7dbc1fa/sd.jpg",
-        "color": null,
+        "color": "yellow",
         "category": null
       }
     },
