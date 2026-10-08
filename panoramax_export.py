@@ -11,12 +11,45 @@ API_BASE = "https://panoramax.openstreetmap.fr/api"
 # USER_UUID = "6bde391d-7dd7-4811-9276-d6bb39c1aa3c"  # digneavelo
 USER_UUID = "c20350b4-0f74-40e4-bd40-f89ab8f8c5f6"    # lyse
 OUTPUT_GEOJSON = "mes_photos.geojson"
+ANNOTATIONS_FILE = "annotations.json"
+
+CATEGORIES_VALIDES = {"infrastructure", "securite", "stationnement"}
+COULEURS_VALIDES = {"vert", "jaune", "orange", "rouge", "violet"}
 
 # Le jeton JWT est lu depuis la variable d'environnement PANORAMAX_JWT
 # (les données publiques de Panoramax ne nécessitent pas d'authentification,
 #  le jeton sert uniquement si vos séquences sont privées).
 JWT_TOKEN = os.environ.get("PANORAMAX_JWT", "")
 HEADERS = {"Authorization": f"Bearer {JWT_TOKEN}"} if JWT_TOKEN else {}
+
+
+# ─────────────────────────────────────────────
+# Annotations manuelles (couleur et catégorie par photo)
+# ─────────────────────────────────────────────
+def load_annotations():
+    """
+    Charge les annotations manuelles depuis annotations.json.
+    Format attendu :
+    {
+      "<photo_id>": {"couleur": "orange", "categorie": "sécurité"},
+      ...
+    }
+    Retourne un dictionnaire vide si le fichier n'existe pas.
+    """
+    if not os.path.exists(ANNOTATIONS_FILE):
+        return {}
+    with open(ANNOTATIONS_FILE, encoding="utf-8") as f:
+        data = json.load(f)
+
+    annotations = {}
+    for pic_id, props in data.items():
+        couleur = props.get("couleur")
+        categorie = props.get("categorie")
+        annotations[pic_id] = {
+            "couleur": couleur if couleur in COULEURS_VALIDES else None,
+            "categorie": categorie if categorie in CATEGORIES_VALIDES else None,
+        }
+    return annotations
 
 
 # ─────────────────────────────────────────────
@@ -96,9 +129,10 @@ def get_sequence_photos(seq_url):
 # ─────────────────────────────────────────────
 # Étape 4 : Extraire les infos d'une photo
 # ─────────────────────────────────────────────
-def extract_photo_feature(feature, sequence_title):
+def extract_photo_feature(feature, sequence_title, annotations):
     """
-    Extrait la localisation, le nom de la séquence et l'URL de la photo
+    Extrait la localisation, le nom de la séquence, l'URL de la photo
+    et les annotations manuelles (couleur, catégorie)
     sous forme de Feature GeoJSON.
     """
     pic_id = feature["id"]
@@ -117,17 +151,23 @@ def extract_photo_feature(feature, sequence_title):
     if coords[0] is None or coords[1] is None:
         return None
 
+    props = {
+        "id": pic_id,
+        "sequence_title": sequence_title,
+        "image_url": image_url,
+    }
+
+    annotation = annotations.get(pic_id, {})
+    props["couleur"] = annotation.get("couleur")
+    props["categorie"] = annotation.get("categorie")
+
     return {
         "type": "Feature",
         "geometry": {
             "type": "Point",
             "coordinates": [coords[0], coords[1]],
         },
-        "properties": {
-            "id": pic_id,
-            "sequence_title": sequence_title,
-            "image_url": image_url,
-        },
+        "properties": props,
     }
 
 
@@ -136,6 +176,9 @@ def extract_photo_feature(feature, sequence_title):
 # ─────────────────────────────────────────────
 def main():
     print("🔍 Récupération de vos séquences...")
+
+    annotations = load_annotations()
+    print(f"   🎨 {len(annotations)} annotations chargées\n")
 
     sequences = get_user_sequences()
     print(f"   📁 {len(sequences)} séquences trouvées\n")
@@ -151,7 +194,7 @@ def main():
         # Photos de la séquence
         photos = get_sequence_photos(seq["url"])
         for feature in photos:
-            photo_feature = extract_photo_feature(feature, seq["title"])
+            photo_feature = extract_photo_feature(feature, seq["title"], annotations)
             if photo_feature:
                 features.append(photo_feature)
         print(f"     → {len(photos)} photos")

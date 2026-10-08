@@ -13,7 +13,9 @@
       "properties": {
         "id": "633aac12-68fb-4555-b188-025bc6a2c1de",
         "sequence_title": "le boudin de séparation empêche de monter sur la piste",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/63/3a/ac/12/68fb-4555-b188-025bc6a2c1de/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/63/3a/ac/12/68fb-4555-b188-025bc6a2c1de/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -28,7 +30,9 @@
       "properties": {
         "id": "f3043db2-734e-44e0-b7c0-cd9e5ac393f8",
         "sequence_title": "goudron à refaire et fin de piste mal signalisee ",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/f3/04/3d/b2/734e-44e0-b7c0-cd9e5ac393f8/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/f3/04/3d/b2/734e-44e0-b7c0-cd9e5ac393f8/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -43,7 +47,9 @@
       "properties": {
         "id": "64dd33db-ebe2-4260-83a5-c063a5887727",
         "sequence_title": "peu pratique et n arrête pas les motos",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/64/dd/33/db/ebe2-4260-83a5-c063a5887727/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/64/dd/33/db/ebe2-4260-83a5-c063a5887727/sd.jpg",
+        "couleur": "orange",
+        "categorie": "securite"
       }
     },
     {
@@ -58,7 +64,9 @@
       "properties": {
         "id": "6a832808-df4c-404a-82a3-54c433d201be",
         "sequence_title": "trou",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/6a/83/28/08/df4c-404a-82a3-54c433d201be/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/6a/83/28/08/df4c-404a-82a3-54c433d201be/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -73,7 +81,9 @@
       "properties": {
         "id": "1486c5c4-9085-4d62-8e6d-2ae88c382623",
         "sequence_title": "revêtement à refaire",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/14/86/c5/c4/9085-4d62-8e6d-2ae88c382623/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/14/86/c5/c4/9085-4d62-8e6d-2ae88c382623/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -88,7 +98,9 @@
       "properties": {
         "id": "4e5efa9d-0471-40a3-a504-f38d28f49101",
         "sequence_title": "début de piste trop discret - à signaliser",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/4e/5e/fa/9d/0471-40a3-a504-f38d28f49101/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/4e/5e/fa/9d/0471-40a3-a504-f38d28f49101/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -103,7 +115,9 @@
       "properties": {
         "id": "b966539d-ca7c-41c3-9aab-f01d3525995f",
         "sequence_title": "discret début de piste, à signaliser",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/b9/66/53/9d/ca7c-41c3-9aab-f01d3525995f/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/b9/66/53/9d/ca7c-41c3-9aab-f01d3525995f/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -118,7 +132,9 @@
       "properties": {
         "id": "462b8825-014a-4cc7-a208-766515877d31",
         "sequence_title": "Pas de piste, mais de nombreux usagers",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/46/2b/88/25/014a-4cc7-a208-766515877d31/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/46/2b/88/25/014a-4cc7-a208-766515877d31/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -133,7 +149,9 @@
       "properties": {
         "id": "f32a5428-d073-47b4-a1e5-a128c2620b06",
         "sequence_title": "Pas de piste, pas d arceaux, l enfer du vélo",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/f3/2a/54/28/d073-47b4-a1e5-a128c2620b06/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/f3/2a/54/28/d073-47b4-a1e5-a128c2620b06/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -148,7 +166,9 @@
       "properties": {
         "id": "05d3fa79-cf8f-44e4-b25a-9aa707effd4f",
         "sequence_title": "zone commerciale égal désert de pistes cyclables. pourtant il y a la place.",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/05/d3/fa/79/cf8f-44e4-b25a-9aa707effd4f/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/05/d3/fa/79/cf8f-44e4-b25a-9aa707effd4f/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -163,7 +183,9 @@
       "properties": {
         "id": "409bbe28-070a-4d67-b3f1-b549d7420b5b",
         "sequence_title": "besoin d une piste jusqu'à l hopital",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/40/9b/be/28/070a-4d67-b3f1-b549d7420b5b/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/40/9b/be/28/070a-4d67-b3f1-b549d7420b5b/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -178,7 +200,9 @@
       "properties": {
         "id": "2b6d58c3-caed-4bea-acab-d706cd6be56b",
         "sequence_title": "de 3m de large à 1m de large - un peu ridicule ",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/2b/6d/58/c3/caed-4bea-acab-d706cd6be56b/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/2b/6d/58/c3/caed-4bea-acab-d706cd6be56b/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -193,7 +217,9 @@
       "properties": {
         "id": "794f0233-f43a-4875-835a-054422d1748f",
         "sequence_title": "bel aménagement. on aime",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/79/4f/02/33/f43a-4875-835a-054422d1748f/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/79/4f/02/33/f43a-4875-835a-054422d1748f/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -208,7 +234,9 @@
       "properties": {
         "id": "711753aa-975f-4a44-9ed5-3cbf4916db0f",
         "sequence_title": "possible de matérialiser une piste jusqu'à l hôpital?",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/71/17/53/aa/975f-4a44-9ed5-3cbf4916db0f/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/71/17/53/aa/975f-4a44-9ed5-3cbf4916db0f/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -223,7 +251,9 @@
       "properties": {
         "id": "f928e996-e7a8-45e7-aab1-4acde4d4a194",
         "sequence_title": "fin de piste abrupte",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/f9/28/e9/96/e7a8-45e7-aab1-4acde4d4a194/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/f9/28/e9/96/e7a8-45e7-aab1-4acde4d4a194/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -238,7 +268,9 @@
       "properties": {
         "id": "ec2b3b3c-f59a-4e1b-8132-fc90d7dbc1fa",
         "sequence_title": "ou est la piste sur ce rond point?",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/ec/2b/3b/3c/f59a-4e1b-8132-fc90d7dbc1fa/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/ec/2b/3b/3c/f59a-4e1b-8132-fc90d7dbc1fa/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -253,7 +285,9 @@
       "properties": {
         "id": "2a270538-8cf4-46a3-8dd8-9fa325234e62",
         "sequence_title": "Pas de piste pour aller aux Augiers",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/2a/27/05/38/8cf4-46a3-8dd8-9fa325234e62/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/2a/27/05/38/8cf4-46a3-8dd8-9fa325234e62/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -268,7 +302,9 @@
       "properties": {
         "id": "d6b651fd-4a15-4ff5-bb6e-16c1c18211a1",
         "sequence_title": "la route et le rd point sont assez large pour que la piste ne s interrompe pas!",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/d6/b6/51/fd/4a15-4ff5-bb6e-16c1c18211a1/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/d6/b6/51/fd/4a15-4ff5-bb6e-16c1c18211a1/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -283,7 +319,9 @@
       "properties": {
         "id": "7b301e0d-b1e0-4ddf-ae7a-e2b0e4b155a4",
         "sequence_title": "au pied de l arbre possibilité d élargir pour prolonger la piste",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/7b/30/1e/0d/b1e0-4ddf-ae7a-e2b0e4b155a4/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/7b/30/1e/0d/b1e0-4ddf-ae7a-e2b0e4b155a4/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -298,7 +336,9 @@
       "properties": {
         "id": "bf704d57-f7de-4c42-adbc-02368825bea6",
         "sequence_title": "il y a la place de casser le trottoir pour prolonger la piste",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/bf/70/4d/57/f7de-4c42-adbc-02368825bea6/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/bf/70/4d/57/f7de-4c42-adbc-02368825bea6/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -313,7 +353,9 @@
       "properties": {
         "id": "73799fca-a746-43fb-aab6-b894d77af079",
         "sequence_title": "fin de piste abrupte et dangereuse",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/73/79/9f/ca/a746-43fb-aab6-b894d77af079/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/73/79/9f/ca/a746-43fb-aab6-b894d77af079/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -328,7 +370,9 @@
       "properties": {
         "id": "78513af7-2f84-49ed-bc96-a347d4031cf5",
         "sequence_title": "voitures roulent très vite - besoin de mettre des balivernes pour sécuriser visuellement la piste",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/78/51/3a/f7/2f84-49ed-bc96-a347d4031cf5/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/78/51/3a/f7/2f84-49ed-bc96-a347d4031cf5/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -343,7 +387,9 @@
       "properties": {
         "id": "108c86f1-e80d-4c21-af4e-82525731f307",
         "sequence_title": "fin de piste abrupte et intersection dangereuse",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/10/8c/86/f1/e80d-4c21-af4e-82525731f307/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/10/8c/86/f1/e80d-4c21-af4e-82525731f307/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -358,7 +404,9 @@
       "properties": {
         "id": "a56766f5-f2b3-4f61-9ab0-8cc4b7e51df5",
         "sequence_title": "inconfortable - piste trop étroite au niveau du platane, revêtement défoncé",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/a5/67/66/f5/f2b3-4f61-9ab0-8cc4b7e51df5/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/a5/67/66/f5/f2b3-4f61-9ab0-8cc4b7e51df5/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -373,7 +421,9 @@
       "properties": {
         "id": "97227eea-6618-4d3c-b2a1-ca96b1e2103b",
         "sequence_title": "danger : intersection compliquée a apprehender a velo, à repenser",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/97/22/7e/ea/6618-4d3c-b2a1-ca96b1e2103b/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/97/22/7e/ea/6618-4d3c-b2a1-ca96b1e2103b/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -388,7 +438,9 @@
       "properties": {
         "id": "c08a6a23-701b-4355-857f-7e1e1b030c37",
         "sequence_title": "arceaux neufs achetés par la pharmacie. top!",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/c0/8a/6a/23/701b-4355-857f-7e1e1b030c37/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/c0/8a/6a/23/701b-4355-857f-7e1e1b030c37/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -403,7 +455,9 @@
       "properties": {
         "id": "f37b76aa-d864-4f34-8a18-5c837a6eef1c",
         "sequence_title": "pourquoi pas une vraie piste",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/f3/7b/76/aa/d864-4f34-8a18-5c837a6eef1c/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/f3/7b/76/aa/d864-4f34-8a18-5c837a6eef1c/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -418,7 +472,9 @@
       "properties": {
         "id": "d9b82de4-c146-4394-b884-57fe00f9780c",
         "sequence_title": "rampe trop raide débouchant sur rond point",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/d9/b8/2d/e4/c146-4394-b884-57fe00f9780c/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/d9/b8/2d/e4/c146-4394-b884-57fe00f9780c/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -433,7 +489,9 @@
       "properties": {
         "id": "a0434ce7-2c5d-4b5b-af9b-ac23c754bffe",
         "sequence_title": "passerelle gymkhaka (et trop étroite pour croiser)",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/a0/43/4c/e7/2c5d-4b5b-af9b-ac23c754bffe/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/a0/43/4c/e7/2c5d-4b5b-af9b-ac23c754bffe/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -448,7 +506,9 @@
       "properties": {
         "id": "a1524a56-fa9d-4eea-b244-4d938192b0c5",
         "sequence_title": "gymkhana",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/a1/52/4a/56/fa9d-4eea-b244-4d938192b0c5/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/a1/52/4a/56/fa9d-4eea-b244-4d938192b0c5/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -463,7 +523,9 @@
       "properties": {
         "id": "e152f5c9-d042-4d5c-8676-f8f3f05c5016",
         "sequence_title": "jonction piste cyclable très mal étudiée ",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/e1/52/f5/c9/d042-4d5c-8676-f8f3f05c5016/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/e1/52/f5/c9/d042-4d5c-8676-f8f3f05c5016/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -478,7 +540,9 @@
       "properties": {
         "id": "3284751f-35ae-4a26-9532-575dadffe91c",
         "sequence_title": "intersection de l horreur",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/32/84/75/1f/35ae-4a26-9532-575dadffe91c/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/32/84/75/1f/35ae-4a26-9532-575dadffe91c/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -493,7 +557,9 @@
       "properties": {
         "id": "db59e5b0-3ba0-4e74-a621-5696e3414570",
         "sequence_title": "intersection de l horreur",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/db/59/e5/b0/3ba0-4e74-a621-5696e3414570/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/db/59/e5/b0/3ba0-4e74-a621-5696e3414570/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -508,7 +574,9 @@
       "properties": {
         "id": "db982f03-0520-4daa-ae45-cf74ead3d6ba",
         "sequence_title": "trop étroit et pas de visi sur les piétons qui sortent",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/db/98/2f/03/0520-4daa-ae45-cf74ead3d6ba/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/db/98/2f/03/0520-4daa-ae45-cf74ead3d6ba/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -523,7 +591,9 @@
       "properties": {
         "id": "fa68246d-02b6-42cd-9ca6-f5874edb230f",
         "sequence_title": "piste très etroite au niveau du platane ",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/fa/68/24/6d/02b6-42cd-9ca6-f5874edb230f/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/fa/68/24/6d/02b6-42cd-9ca6-f5874edb230f/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -538,7 +608,9 @@
       "properties": {
         "id": "fc146225-f7fb-427e-bd4e-177b99dd3bda",
         "sequence_title": "piste cyclable sur arrêt bus",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/fc/14/62/25/f7fb-427e-bd4e-177b99dd3bda/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/fc/14/62/25/f7fb-427e-bd4e-177b99dd3bda/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -553,7 +625,9 @@
       "properties": {
         "id": "814de81c-6756-4d6e-88ae-46f0db25ab34",
         "sequence_title": "passage vélo souvent bloqué par voitures garées",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/81/4d/e8/1c/6756-4d6e-88ae-46f0db25ab34/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/81/4d/e8/1c/6756-4d6e-88ae-46f0db25ab34/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -568,7 +642,9 @@
       "properties": {
         "id": "d436edfa-e4ae-4bcd-bba2-62fdb94dbbc6",
         "sequence_title": "Pas assez d arceaux / mal positionnés",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/d4/36/ed/fa/e4ae-4bcd-bba2-62fdb94dbbc6/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/d4/36/ed/fa/e4ae-4bcd-bba2-62fdb94dbbc6/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     },
     {
@@ -583,7 +659,9 @@
       "properties": {
         "id": "96df4f06-ff8f-41d4-9716-262e3b2d90da",
         "sequence_title": "Pas d arceaux à velo",
-        "image_url": "https://panoramax.openstreetmap.fr/derivates/96/df/4f/06/ff8f-41d4-9716-262e3b2d90da/sd.jpg"
+        "image_url": "https://panoramax.openstreetmap.fr/derivates/96/df/4f/06/ff8f-41d4-9716-262e3b2d90da/sd.jpg",
+        "couleur": null,
+        "categorie": null
       }
     }
   ]
