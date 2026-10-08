@@ -50,33 +50,31 @@
     "hint": "zone commerciale égal désert de pistes cyclables. pourtant il y a la place."
   },
   "409bbe28-070a-4d67-b3f1-b549d7420b5b": {
-    "color": null,
-    "category": null,
+    "color": "signs",
+    "category": "yellow",
     "hint": "besoin d une piste jusqu'à l hopital"
   },
   "2b6d58c3-caed-4bea-acab-d706cd6be56b": {
-    "color": null,
-    "category": null,
     "hint": "de 3m de large à 1m de large - un peu ridicule "
   },
   "794f0233-f43a-4875-835a-054422d1748f": {
-    "color": null,
-    "category": null,
+    "color": "green",
+    "category": "infrastructure",
     "hint": "bel aménagement. on aime"
   },
   "711753aa-975f-4a44-9ed5-3cbf4916db0f": {
-    "color": null,
-    "category": null,
+    "color": "signs",
+    "category": "yellow",
     "hint": "possible de matérialiser une piste jusqu'à l hôpital?"
   },
   "f928e996-e7a8-45e7-aab1-4acde4d4a194": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "fin de piste abrupte"
   },
   "ec2b3b3c-f59a-4e1b-8132-fc90d7dbc1fa": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "signs",
     "hint": "ou est la piste sur ce rond point?"
   },
   "2a270538-8cf4-46a3-8dd8-9fa325234e62": {
