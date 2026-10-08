@@ -13,28 +13,28 @@ USER_UUID = "c20350b4-0f74-40e4-bd40-f89ab8f8c5f6"    # lyse
 OUTPUT_GEOJSON = "mes_photos.geojson"
 ANNOTATIONS_FILE = "annotations.json"
 
-CATEGORIES_VALIDES = {"infrastructure", "securite", "stationnement"}
-COULEURS_VALIDES = {"vert", "jaune", "orange", "rouge", "violet"}
+VALID_CATEGORIES = {"infrastructure", "security", "parking"}
+VALID_COLORS = {"green", "yellow", "orange", "red", "purple"}
 
-# Le jeton JWT est lu depuis la variable d'environnement PANORAMAX_JWT
-# (les données publiques de Panoramax ne nécessitent pas d'authentification,
-#  le jeton sert uniquement si vos séquences sont privées).
+# The JWT token is read from the PANORAMAX_JWT environment variable
+# (public Panoramax data does not require authentication; the token is
+#  only needed if your sequences are private).
 JWT_TOKEN = os.environ.get("PANORAMAX_JWT", "")
 HEADERS = {"Authorization": f"Bearer {JWT_TOKEN}"} if JWT_TOKEN else {}
 
 
 # ─────────────────────────────────────────────
-# Annotations manuelles (couleur et catégorie par photo)
+# Manual annotations (color and category per photo)
 # ─────────────────────────────────────────────
 def load_annotations():
     """
-    Charge les annotations manuelles depuis annotations.json.
-    Format attendu :
+    Loads manual annotations from annotations.json.
+    Expected format:
     {
-      "<photo_id>": {"couleur": "orange", "categorie": "sécurité"},
+      "<photo_id>": {"color": "orange", "category": "security"},
       ...
     }
-    Retourne un dictionnaire vide si le fichier n'existe pas.
+    Returns an empty dict if the file does not exist.
     """
     if not os.path.exists(ANNOTATIONS_FILE):
         return {}
@@ -43,22 +43,22 @@ def load_annotations():
 
     annotations = {}
     for pic_id, props in data.items():
-        couleur = props.get("couleur")
-        categorie = props.get("categorie")
+        color = props.get("color")
+        category = props.get("category")
         annotations[pic_id] = {
-            "couleur": couleur if couleur in COULEURS_VALIDES else None,
-            "categorie": categorie if categorie in CATEGORIES_VALIDES else None,
+            "color": color if color in VALID_COLORS else None,
+            "category": category if category in VALID_CATEGORIES else None,
         }
     return annotations
 
 
 # ─────────────────────────────────────────────
-# Étape 1 : Récupérer la liste des séquences
+# Step 1: Fetch the list of sequences
 # ─────────────────────────────────────────────
 def get_user_sequences():
     """
-    Récupère toutes les séquences depuis /api/users/<uuid>/collection.
-    Retourne une liste de dictionnaires {url, title}.
+    Fetches all sequences from /api/users/<uuid>/collection.
+    Returns a list of dicts {url, title}.
     """
     sequences = []
     url = f"{API_BASE}/users/{USER_UUID}/collection?limit=100"
@@ -87,11 +87,11 @@ def get_user_sequences():
 
 
 # ─────────────────────────────────────────────
-# Étape 2 : Récupérer le titre d'une séquence
+# Step 2: Fetch the title of a sequence
 # ─────────────────────────────────────────────
 def get_sequence_title(seq_url):
     """
-    Récupère le titre d'une séquence.
+    Fetches the title of a sequence.
     """
     resp = requests.get(seq_url, headers=HEADERS)
     if resp.status_code == 200:
@@ -100,11 +100,11 @@ def get_sequence_title(seq_url):
 
 
 # ─────────────────────────────────────────────
-# Étape 3 : Récupérer toutes les photos d'une séquence
+# Step 3: Fetch all photos of a sequence
 # ─────────────────────────────────────────────
 def get_sequence_photos(seq_url):
     """
-    Récupère toutes les photos d'une séquence avec pagination.
+    Fetches all photos of a sequence with pagination.
     """
     photos = []
     url = seq_url + "/items?limit=1000"
@@ -127,19 +127,18 @@ def get_sequence_photos(seq_url):
 
 
 # ─────────────────────────────────────────────
-# Étape 4 : Extraire les infos d'une photo
+# Step 4: Extract photo information
 # ─────────────────────────────────────────────
 def extract_photo_feature(feature, sequence_title, annotations):
     """
-    Extrait la localisation, le nom de la séquence, l'URL de la photo
-    et les annotations manuelles (couleur, catégorie)
-    sous forme de Feature GeoJSON.
+    Extracts the location, sequence name, photo URL and manual
+    annotations (color, category) as a GeoJSON Feature.
     """
     pic_id = feature["id"]
     geom = feature.get("geometry", {})
     coords = geom.get("coordinates", [None, None])
 
-    # URL de l'image depuis les assets
+    # Image URL from the assets
     assets = feature.get("assets", {})
     if "sd" in assets:
         image_url = assets["sd"]["href"]
@@ -158,8 +157,8 @@ def extract_photo_feature(feature, sequence_title, annotations):
     }
 
     annotation = annotations.get(pic_id, {})
-    props["couleur"] = annotation.get("couleur")
-    props["categorie"] = annotation.get("categorie")
+    props["color"] = annotation.get("color")
+    props["category"] = annotation.get("category")
 
     return {
         "type": "Feature",
@@ -175,23 +174,23 @@ def extract_photo_feature(feature, sequence_title, annotations):
 # Main
 # ─────────────────────────────────────────────
 def main():
-    print("🔍 Récupération de vos séquences...")
+    print("🔍 Fetching your sequences...")
 
     annotations = load_annotations()
-    print(f"   🎨 {len(annotations)} annotations chargées\n")
+    print(f"   🎨 {len(annotations)} annotations loaded\n")
 
     sequences = get_user_sequences()
-    print(f"   📁 {len(sequences)} séquences trouvées\n")
+    print(f"   📁 {len(sequences)} sequences found\n")
 
     features = []
     for i, seq in enumerate(sequences):
-        print(f"  📸 Séquence {i+1}/{len(sequences)}...")
+        print(f"  📸 Sequence {i+1}/{len(sequences)}...")
 
-        # Titre de la séquence
+        # Sequence title
         seq["title"] = get_sequence_title(seq["url"])
         print(f"     → {seq['title']}")
 
-        # Photos de la séquence
+        # Sequence photos
         photos = get_sequence_photos(seq["url"])
         for feature in photos:
             photo_feature = extract_photo_feature(feature, seq["title"], annotations)
@@ -199,18 +198,18 @@ def main():
                 features.append(photo_feature)
         print(f"     → {len(photos)} photos")
 
-    print(f"\n✅ Total : {len(features)} photos")
+    print(f"\n✅ Total: {len(features)} photos")
 
-    # Création du FeatureCollection GeoJSON
+    # Build the GeoJSON FeatureCollection
     geojson = {
         "type": "FeatureCollection",
         "features": features,
     }
 
-    # Sauvegarde
+    # Save
     with open(OUTPUT_GEOJSON, "w", encoding="utf-8") as f:
         json.dump(geojson, f, ensure_ascii=False, indent=2)
-    print(f"💾 Fichier sauvegardé : {OUTPUT_GEOJSON}")
+    print(f"💾 File saved: {OUTPUT_GEOJSON}")
 
     return 0 if features else 1
 

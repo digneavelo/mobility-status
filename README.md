@@ -1,52 +1,51 @@
 # mobility-status
 
-Project visant à créer une Umap sur le réseau cyclable dignois.
+Project aimed at creating a uMap of the cycling network in Digne-les-Bains.
 
-## Principe
+## How it works
 
-Les photos sont importées dans [Panoramax](https://panoramax.openstreetmap.fr/)
-(compte « lyse »), puis exportées automatiquement en GeoJSON
-(`mes_photos.geojson`) par [`panoramax_export.py`](panoramax_export.py).
+Photos are uploaded to [Panoramax](https://panoramax.openstreetmap.fr/)
+("lyse" account), then automatically exported as GeoJSON
+(`mes_photos.geojson`) by [`panoramax_export.py`](panoramax_export.py).
 
-Un [workflow GitHub Actions](.github/workflows/update-photos.yml) régénère le
-fichier chaque jour à 4h du matin (UTC) et le commite, de sorte que l'URL
-ci-dessous serve toujours des données à jour :
+A [GitHub Actions workflow](.github/workflows/update-photos.yml) regenerates
+the file every day at 4 AM (UTC) and commits it, so the URL below always
+serves up-to-date data:
 
 ```
 https://raw.githubusercontent.com/digneavelo/mobility-status/main/mes_photos.geojson
 ```
 
-Cette URL est à utiliser dans uMap comme calque de « données distantes »
-(format geojson, option « dynamique » cochée).
+Use this URL in uMap as a "remote data" layer (geojson format, "dynamic"
+option checked).
 
-## Annotations manuelles (couleur et catégorie)
+## Manual annotations (color and category)
 
-Le fichier [`annotations.json`](annotations.json) permet d'ajouter, pour chaque
-photo, deux informations :
+The [`annotations.json`](annotations.json) file lets you add two pieces of
+information to each photo:
 
-- `couleur` : `vert`, `jaune`, `orange`, `rouge` ou `violet`
-- `categorie` : `infrastructure`, `securite` ou `stationnement`
+- `color`: `green`, `yellow`, `orange`, `red` or `purple`
+- `category`: `infrastructure`, `security` or `parking`
 
-Chaque clé est l'identifiant de la photo (propriété `id` dans
-`mes_photos.geojson`) :
+Each key is the photo ID (the `id` property in `mes_photos.geojson`):
 
 ```json
 {
   "64dd33db-ebe2-4260-83a5-c063a5887727": {
-    "couleur": "orange",
-    "categorie": "securite"
+    "color": "orange",
+    "category": "security"
   }
 }
 ```
 
-Ces annotations sont fusionnées dans `mes_photos.geojson` (propriétés `couleur`
-et `categorie`) à chaque exécution du script. Pour ajouter ou modifier une
-annotation, éditez `annotations.json` et commitez — le prochain passage du
-workflow (ou une exécution manuelle) mettra le GeoJSON à jour.
+These annotations are merged into `mes_photos.geojson` (`color` and `category`
+properties) on every run of the script. To add or change an annotation, edit
+`annotations.json` and commit — the next workflow run (or a manual run) will
+update the GeoJSON file.
 
-Dans uMap, les valeurs peuvent être utilisées via :
+In uMap, these values can be used with the layer's **conditional style rules**:
 
-- le **style conditionnel** du calque pour colorer les points selon `couleur` ;
-- un champ « catégorie » avec les icônes correspondantes
-  (infrastructure → route, sécurité → panneau attention, stationnement →
-  parking) via les réglages avancés d'icônes/uMap pictograms.
+- marker **color** based on the `color` property;
+- marker **pictogram** based on the `category` property
+  (infrastructure → road icon, security → warning sign icon,
+  parking → parking icon).
