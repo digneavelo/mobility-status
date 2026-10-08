@@ -10,7 +10,7 @@ import requests
 API_BASE = "https://panoramax.openstreetmap.fr/api"
 # USER_UUID = "6bde391d-7dd7-4811-9276-d6bb39c1aa3c"  # digneavelo
 USER_UUID = "c20350b4-0f74-40e4-bd40-f89ab8f8c5f6"    # lyse
-OUTPUT_GEOJSON = "mes_photos.geojson"
+OUTPUT_GEOJSON = "data.geojson"
 ANNOTATIONS_FILE = "annotations.json"
 
 VALID_CATEGORIES = {"infrastructure", "security", "parking"}
