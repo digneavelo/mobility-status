@@ -24,8 +24,8 @@ option checked).
 The [`annotations.json`](annotations.json) file lets you add two pieces of
 information to each photo:
 
-- `color`: `green`, `yellow`, `orange`, `red` or `purple`
-- `category`: `infrastructure`, `security` or `parking`
+- `color`: `green`, `yellow`, `orange`, `red`, `purple` or `pink`
+- `category`: `infrastructure`, `security`, `signs` or `parking`
 
 Each key is the photo ID (the `id` property in `data.geojson`):
 

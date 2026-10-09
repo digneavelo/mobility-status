@@ -1,12 +1,12 @@
 {
   "633aac12-68fb-4555-b188-025bc6a2c1de": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "infrastructure",
     "hint": "le boudin de séparation empêche de monter sur la piste"
   },
   "f3043db2-734e-44e0-b7c0-cd9e5ac393f8": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "signs",
     "hint": "goudron à refaire et fin de piste mal signalisee "
   },
   "64dd33db-ebe2-4260-83a5-c063a5887727": {
@@ -15,43 +15,43 @@
     "hint": "peu pratique et n arrête pas les motos"
   },
   "6a832808-df4c-404a-82a3-54c433d201be": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "trou"
   },
   "1486c5c4-9085-4d62-8e6d-2ae88c382623": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "revêtement à refaire"
   },
   "4e5efa9d-0471-40a3-a504-f38d28f49101": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "signs",
     "hint": "début de piste trop discret - à signaliser"
   },
   "b966539d-ca7c-41c3-9aab-f01d3525995f": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "signs",
     "hint": "discret début de piste, à signaliser"
   },
   "462b8825-014a-4cc7-a208-766515877d31": {
-    "color": null,
-    "category": null,
+    "color": "pink",
+    "category": "infrastructure",
     "hint": "Pas de piste, mais de nombreux usagers"
   },
   "f32a5428-d073-47b4-a1e5-a128c2620b06": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "Pas de piste, pas d arceaux, l enfer du vélo"
   },
   "05d3fa79-cf8f-44e4-b25a-9aa707effd4f": {
-    "color": null,
-    "category": null,
+    "color": "red",
+    "category": "infrastructure",
     "hint": "zone commerciale égal désert de pistes cyclables. pourtant il y a la place."
   },
   "409bbe28-070a-4d67-b3f1-b549d7420b5b": {
-    "color": "signs",
-    "category": "yellow",
+    "color": "yellow",
+    "category": "signs",
     "hint": "besoin d une piste jusqu'à l hopital"
   },
   "2b6d58c3-caed-4bea-acab-d706cd6be56b": {
@@ -63,8 +63,8 @@
     "hint": "bel aménagement. on aime"
   },
   "711753aa-975f-4a44-9ed5-3cbf4916db0f": {
-    "color": "signs",
-    "category": "yellow",
+    "color": "yellow",
+    "category": "signs",
     "hint": "possible de matérialiser une piste jusqu'à l hôpital?"
   },
   "f928e996-e7a8-45e7-aab1-4acde4d4a194": {
@@ -74,122 +74,122 @@
   },
   "ec2b3b3c-f59a-4e1b-8132-fc90d7dbc1fa": {
     "color": "yellow",
-    "category": "signs",
+    "category": "infrastructure",
     "hint": "ou est la piste sur ce rond point?"
   },
   "2a270538-8cf4-46a3-8dd8-9fa325234e62": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "infrastructure",
     "hint": "Pas de piste pour aller aux Augiers"
   },
   "d6b651fd-4a15-4ff5-bb6e-16c1c18211a1": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "infrastructure",
     "hint": "la route et le rd point sont assez large pour que la piste ne s interrompe pas!"
   },
   "7b301e0d-b1e0-4ddf-ae7a-e2b0e4b155a4": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "infrastructure",
     "hint": "au pied de l arbre possibilité d élargir pour prolonger la piste"
   },
   "bf704d57-f7de-4c42-adbc-02368825bea6": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "infrastructure",
     "hint": "il y a la place de casser le trottoir pour prolonger la piste"
   },
   "73799fca-a746-43fb-aab6-b894d77af079": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "fin de piste abrupte et dangereuse"
   },
   "78513af7-2f84-49ed-bc96-a347d4031cf5": {
-    "color": null,
-    "category": null,
+    "color": "red",
+    "category": "signs",
     "hint": "voitures roulent très vite - besoin de mettre des balivernes pour sécuriser visuellement la piste"
   },
   "108c86f1-e80d-4c21-af4e-82525731f307": {
-    "color": null,
-    "category": null,
+    "color": "red",
+    "category": "signs",
     "hint": "fin de piste abrupte et intersection dangereuse"
   },
   "a56766f5-f2b3-4f61-9ab0-8cc4b7e51df5": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "inconfortable - piste trop étroite au niveau du platane, revêtement défoncé"
   },
   "97227eea-6618-4d3c-b2a1-ca96b1e2103b": {
-    "color": null,
-    "category": null,
+    "color": "red",
+    "category": "signs",
     "hint": "danger : intersection compliquée a apprehender a velo, à repenser"
   },
   "c08a6a23-701b-4355-857f-7e1e1b030c37": {
-    "color": null,
-    "category": null,
+    "color": "green",
+    "category": "parking",
     "hint": "arceaux neufs achetés par la pharmacie. top!"
   },
   "f37b76aa-d864-4f34-8a18-5c837a6eef1c": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "infrastructure",
     "hint": "pourquoi pas une vraie piste"
   },
   "d9b82de4-c146-4394-b884-57fe00f9780c": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "rampe trop raide débouchant sur rond point"
   },
   "a0434ce7-2c5d-4b5b-af9b-ac23c754bffe": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "passerelle gymkhaka (et trop étroite pour croiser)"
   },
   "a1524a56-fa9d-4eea-b244-4d938192b0c5": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "gymkhana"
   },
   "e152f5c9-d042-4d5c-8676-f8f3f05c5016": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "signs",
     "hint": "jonction piste cyclable très mal étudiée "
   },
   "3284751f-35ae-4a26-9532-575dadffe91c": {
-    "color": null,
-    "category": null,
+    "color": "red",
+    "category": "infrastructure",
     "hint": "intersection de l horreur"
   },
   "db59e5b0-3ba0-4e74-a621-5696e3414570": {
-    "color": null,
-    "category": null,
+    "color": "red",
+    "category": "infrastructure",
     "hint": "intersection de l horreur"
   },
   "db982f03-0520-4daa-ae45-cf74ead3d6ba": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "trop étroit et pas de visi sur les piétons qui sortent"
   },
   "fa68246d-02b6-42cd-9ca6-f5874edb230f": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "infrastructure",
     "hint": "piste très etroite au niveau du platane "
   },
   "fc146225-f7fb-427e-bd4e-177b99dd3bda": {
-    "color": null,
-    "category": null,
+    "color": "orange",
+    "category": "infrastructure",
     "hint": "piste cyclable sur arrêt bus"
   },
   "814de81c-6756-4d6e-88ae-46f0db25ab34": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "signs",
     "hint": "passage vélo souvent bloqué par voitures garées"
   },
   "d436edfa-e4ae-4bcd-bba2-62fdb94dbbc6": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "parking",
     "hint": "Pas assez d arceaux / mal positionnés"
   },
   "96df4f06-ff8f-41d4-9716-262e3b2d90da": {
-    "color": null,
-    "category": null,
+    "color": "yellow",
+    "category": "parking",
     "hint": "Pas d arceaux à velo"
   }
 }

@@ -13,8 +13,8 @@ USER_UUID = "c20350b4-0f74-40e4-bd40-f89ab8f8c5f6"    # lyse
 OUTPUT_GEOJSON = "data.geojson"
 ANNOTATIONS_FILE = "annotations.json"
 
-VALID_CATEGORIES = {"infrastructure", "security", "parking"}
-VALID_COLORS = {"green", "yellow", "orange", "red", "purple"}
+VALID_CATEGORIES = {"infrastructure", "security", "signs", "parking"}
+VALID_COLORS = {"green", "yellow", "orange", "red", "purple", "pink"}
 
 # The JWT token is read from the PANORAMAX_JWT environment variable
 # (public Panoramax data does not require authentication; the token is
